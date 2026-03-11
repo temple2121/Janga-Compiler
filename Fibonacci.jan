@@ -1,0 +1,24 @@
+define C 0 //counter for loop//
+define a 0 //awnser var//
+define b 1 //higher num that is added//
+define c 1 //lower num that is added//
+
+printStr how many numbers to generate:| newLine
+
+input -> T
+
+loop C var T
+	print c
+	//move all vars down so adding with last sum and bigger num//
+	var b -> a
+	var c -> b
+	//find new sum//
+	var a var b + -> c 
+	
+	//count up loop counter//
+	var C num 1 + -> C
+
+	newLine
+check
+
+debug

@@ -1,0 +1,40 @@
+//calculator
+
+asks 2 numbers and a opperation
+performs opperation and prints result
+sees if another opperation is wanted
+//
+
+define C 1
+loop C num 0
+	printStr first number:| newLine
+	input -> x
+	printStr second number:| newLine
+	input -> y
+	printStr operater| newLine
+	printStr 0:+,1:-,2:*,3:/,4:%| newLine
+	input -> o
+
+	if o 0 var x var y + -> a end
+	if o 1 var x var y - -> a end
+	if o 2 var x var y * -> a end
+	if o 3 
+		var x var y / -> a 
+	end
+	if o 4 var x var y % -> a end
+	
+	printStr answer:|
+	print a newLine
+	if o 3
+		var x var y % -> a
+		printStr remander:|
+		print a newLine
+	end
+
+	printStr enter 0 to stop, anything else to continue:|
+	newLine
+	input -> C
+check
+
+printStr done
+debug

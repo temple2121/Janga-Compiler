@@ -1,0 +1,11 @@
+define c 0
+define d 6
+loop c var d
+    var c num 1 + -> c
+    print c
+check
+
+printStr bye
+printStr bye
+
+debug

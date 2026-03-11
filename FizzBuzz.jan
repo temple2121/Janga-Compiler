@@ -1,0 +1,24 @@
+define a 0
+loop a num 51
+	var a num 3 % -> c
+	if c 0	
+		printStr fizz|
+	end
+	var a num 5 % -> c
+	if c 0
+		printStr buzz|
+	end
+
+	var c num 0 != -> c
+	if c 1
+		var a num 3 % num 0 != -> c
+		if c 1
+			print a
+		end
+	end
+
+	var a num 1 + -> a 
+	newLine
+check
+
+debug
