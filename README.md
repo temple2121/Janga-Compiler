@@ -1,1 +1,1 @@
-# Janga-Interpreter
+# Janga-Compiler
