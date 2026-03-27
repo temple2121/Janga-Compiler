@@ -4,24 +4,26 @@ everything must have spaces inbetween them unless otherwise shown
 variables must be 1 ascii key
 
 ## Variables
-define x 0  - makes a variable x with value 0
-var x num 5 + -> x  - adds 5 to x and stores it back
+`define x 0`  - makes a variable x with value 0
+`var x num 5 + -> x`  - adds 5 to x and stores it back
 
 ## Math
-num [value]  - pushes a number onto the stack
-var [variable]  - pushes varibles value into the stack
--> [variable]  - puts top of the stack into a variable
+`num [value]`  - pushes a number onto the stack 
+```
 +  - add
 -  - subtract
 *  - multiply
 /  - divide
 %  - modulo
-
+```
 pop - destroys top value in the stack
 
 ## Comparisons
 != - not equal
-> - greater than
+`>` - greater than
+#### Comparison Examples
+`num 1 num 2 != -> x`  x would equal 1 (not equal)
+`num 1 num 2 > -> x`   x would equal 0 (not greater)
 
 ## Control Flow
 if [var] [value]  - runs block if var equals value
