@@ -1,13 +1,15 @@
 # Janga Docs
-
+Janga uses the Stack for all math, if your unfamiliar look it up
 everything must have spaces inbetween them unless otherwise shown
-variables must be 1 ascii key
+variables must be 1 ascii key(if you want good naming then too bad)
 
 ## Variables
 `define x 0`  - makes a variable x with value 0
 `var x num 5 + -> x`  - adds 5 to x and stores it back
 
 ## Math
+All math is applied to top 2 values in the stack, gets rid of both and stores result at the top of the stack
+
 `num [value]`  - pushes a number onto the stack 
 ```
 +  - add
