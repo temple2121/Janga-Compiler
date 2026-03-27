@@ -14,10 +14,10 @@ Required downloads:
 
 
 Running a janga file:
-  -copy the repository
-  -In terminal get into folder directory with:
-      cd [directory]
-  -Run in terminal with:
-      python3 Janga.py [.jan text file]
+  - copy the repository  
+  - In terminal get into folder directory with:  
+      - cd [directory]  
+  - Run in terminal with:  
+      - python3 Janga.py [.jan text file]  
 
 Will open a new terminal to run if the .jan requires input
