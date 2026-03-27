@@ -95,7 +95,7 @@ if source[-1]=='debug':
 	print('token at '+str(testing_token)+': '+str(source[testing_token]))
 
 
-with open("interpreter.asm") as f:
+with open("NASMfile.asm") as f:
 	interpreter_file = f.read()
 
 interpreter_file = interpreter_file.replace(
