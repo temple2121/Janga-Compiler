@@ -15,7 +15,7 @@ Required downloads:
 
 Running a janga file:
   - copy the repository  
-  - In terminal get into folder directory with:  
+  - In terminal get into the respository folder directory with:  
       - cd [directory]  
   - Run in terminal with:  
       - python3 Janga.py [.jan text file]  
