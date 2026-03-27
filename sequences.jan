@@ -1,0 +1,57 @@
+define r 16 //amount of numbers generated//
+
+define n 1
+define a 0
+define b 0
+define n 0
+define c 1
+
+printStr Fibonnaci Sequence:| newLine
+loop c var r
+	print c
+	printStr . |
+	print n newLine
+	//move all vars down so adding with last sum and bigger num//
+	var b -> a
+	var n -> b
+	//find new sum//
+	var a var b + -> n
+	if n 0 
+		var n num 1 + -> n
+	end
+	
+	//increment loop counter//
+	var c num 1 + -> c
+check
+
+define t 0 //triangaler number//
+define c 1 //triangler number counter//
+
+printStr Pyramidal numbers:| newLine
+loop c var r
+	print c
+	printStr . |
+	print t newLine
+	var t var c + -> t
+	var c num 1 + -> c
+check
+
+define c 1 //big counter//
+define p 0 //pyramid number//
+
+printStr Triangular numbers:| newLine
+loop c var r
+	define t 0 //triangaler number//
+	define b 0 //triangler number counter//
+	loop b var c
+		var t var b + -> t
+		var b num 1 + -> b
+	check
+
+	var p var t + -> p
+	print c
+	printStr . |
+	print p newLine
+
+	var c num 1 + -> c
+check
