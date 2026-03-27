@@ -2,16 +2,24 @@
 
 Janga is a compiler that uses python to turn text into their corrisponding tokens, then NASM assembly to create an exacutable file.
 
-*only on mac
+* only on mac
 
-idk way I used NASM its kinda dumb that it only runs on mac cause it needs stuff to convert it to arm anyway but im in way to deep and to lazy to switch it.
+idk why I used NASM its kinda dumb that it only runs on mac cause it needs stuff to convert it to arm anyway but im in way to deep and to lazy to switch it.
 
 Required downloads:
-  -Python 3
-  -NASM (homebrew for installing)
-  -clang
+  - Python 3
+  (used for making the NASM assembly code)
+  - xcode: xcode-select --install
+  - NASM: brew install nasm
+  - Rosetta 2: softwareupdate --install-rosetta
+  (translates x86 -> ARM)
+
 
 Running a janga file:
   -copy the repository
-  -
+  -In terminal get into folder directory with:
+      cd [directory]
+  -Run in terminal with:
+      python3 Janga.py [.jan text file]
 
+Will open a new terminal to run if the .jan requires input
