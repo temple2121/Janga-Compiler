@@ -95,8 +95,9 @@ if source[-1]=='debug':
 	testing_token = 0
 	print('token at '+str(testing_token)+': '+str(source[testing_token]))
 
-directory = os.path.dirname(os.path.abspath(__file__))
-with open(os.path.join(directory, "NASMscript.asm")) as f:
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
+
+with open("NASMscript.asm") as f:
 	compiler_file = f.read()
 
 compiler_file = compiler_file.replace(
@@ -104,7 +105,7 @@ compiler_file = compiler_file.replace(
     "program: dd " + translated + "0"
 )
 
-executable_name = os.path.basename(sys.argv[1]).replace('.jan','')+" excacutable"
+executable_name = os.path.basename(sys.argv[1]).replace('.jan','')+"_executable" 
 
 with open("out.asm", "w") as f:
     f.write(compiler_file)
