@@ -40,6 +40,8 @@ print [var]  - prints a variable
 printStr [text]|  - prints a string (end with |)
 newLine  - prints a new line
 
+`Debug` has Janga.py list the words used and tokens it gives the the NASM file.
+
 ## Example (FizzBuzz)
 define a 0 //this is a comment//
 loop a num 51
@@ -50,3 +52,4 @@ loop a num 51
     var a num 1 + -> a
     newLine
 check
+
